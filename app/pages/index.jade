@@ -1,119 +1,122 @@
 extends /blocks/layout-default/layout-default
 
 block head
-		- var pageTitle = 'CSSSR Project Template';
-	
-block content
-	header.main-header
-		.secret-mark
-		.container
-			a.logo(href="")
-				img(src="", alt="")
-			h1.main-title
-	main.content
-		.form
-			.form__text-inputs
-				.text-input
-					label.text-input__label(for="")
-					input.text-input__field(type="text")
-				.text-input
-					label.text-input__label(for="")
-					input.text-input__field(type="text")
-				.text-input
-					label.text-input__label(for="")
-					input.text-input__field(type="text")
-				.text-input
-					label.text-input__label(for="")
-					input.text-input__field(type="text")
-				.text-input
-					label.text-input__label(for="")
-					input.text-input__field(type="text")
-			.form__checkboxes
-				h2.form__title
-				p.form__text
-				label.checkbox-input(for="")
-					input.checkbox-input__field(type="checkbox")
-					span.checkbox-input__indicator
-				label.checkbox-input(for="")
-					input.checkbox-input__field(type="checkbox")
-					span.checkbox-input__indicator
-				label.checkbox-input(for="")
-					input.checkbox-input__field(type="checkbox")
-					span.checkbox-input__indicator
-				label.checkbox-input(for="")
-					input.checkbox-input__field(type="checkbox") 
-					span.checkbox-input__indicator
-				label.checkbox-input(for="")
-					input.checkbox-input__field(type="checkbox")
-					span.checkbox-input__indicator
-				label.checkbox-input(for="")
-					input.checkbox-input__field(type="checkbox")
-					span.checkbox-input__indicator
-				label.checkbox-input(for="")
-					input.checkbox-input__field(type="checkbox")
-					span.checkbox-input__indicator
-				label.checkbox-input(for="")
-					input.checkbox-input__field(type="checkbox")
-					span.checkbox-input__indicator
-				label.checkbox-input(for="")
-					input.checkbox-input__field(type="checkbox")
-					span.checkbox-input__indicator
-				label.checkbox-input(for="")
-					input.checkbox-input__field(type="checkbox")
-					span.checkbox-input__indicator
-				label.checkbox-input(for="")
-					input.checkbox-input__field(type="checkbox")
-					span.checkbox-input__indicator
-				label.checkbox-input(for="")
-					input.checkbox-input__field(type="checkbox")
-					span.checkbox-input__indicator
-				label.checkbox-input(for="")
-					input.checkbox-input__field(type="checkbox")
-					span.checkbox-input__indicator
-				label.checkbox-input(for="")
-					input.checkbox-input__field(type="checkbox")
-					span.checkbox-input__indicator
-				label.checkbox-input(for="")
-					input.checkbox-input__field(type="checkbox")
-					span.checkbox-input__indicator
-				label.checkbox-input(for="")
-					input.checkbox-input__field(type="checkbox")
-					span.checkbox-input__indicator
-				label.checkbox-input(for="")
-					input.checkbox-input__field(type="checkbox")
-					span.checkbox-input__indicator
-				label.checkbox-input(for="")
-					input.checkbox-input__field(type="checkbox")
-					span.checkbox-input__indicator
-				label.checkbox-input(for="")
-					input.checkbox-input__field(type="checkbox")
-					span.checkbox-input__indicator 
-			.form__javascript-slider
-				h2.form__title
-				.range-slider
-			.form__about
-				h2.form__title
-				p.form__text 
-				textarea(name="", cols="30", rows="10")
-			.form__plans
-				h2.form__title
-				p.form__text
-				label.radio-input(for="")
-					input.radio-input__field(type="radio")
-					span.radio-input__indicator
-				label.radio-input(for="")
-					input.radio-input__field(type="radio")
-					span.radio-input__indicator
-				label.radio-input(for="")
-					input.radio-input__field(type="radio")
-					span.radio-input__indicator
-				label.radio-input(for="")
-					input.radio-input__field(type="radio")
-					span.radio-input__indicator
-			.form__date
-				.text-input
-					label.text-input__label(for="")
-					input.text-input__field(type="text")
+	- var pageTitle = 'CSSSR Project Template';
 
-				
-			
+block content
+	.main
+		header.main-header
+			.secret-mark
+				img(src="assets/images/secret-mark.png", alt="")
+			.container
+				a.logo(href="")
+					img(src="assets/images/logo.png", alt="")
+				h1.main__title
+					img(src="assets/images/title-image.png", alt="")
+		main.content
+			.container
+				.form
+					.form__text-inputs
+						.text-input
+							label.text-input__label(for="") Полное ФИО
+							input.text-input__field(type="text")
+						.text-input
+							label.text-input__label(for="") Год рождения
+							input.text-input__field(type="text")
+						.text-input
+							label.text-input__label(for="") Место жительства
+							input.text-input__field(type="text")
+						.text-input
+							label.text-input__label(for="") Скайп
+							input.text-input__field(type="text")
+						.text-input
+							label.text-input__label(for="") Почта
+							input.text-input__field(type="text")
+				.form__checkboxes
+					h2.form__title Расскажите о себе чекбоксами
+					p.form__text.
+						Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
+					label.checkbox-input(for="") БЭМ/OOCSS
+						input.checkbox-input__field(type="checkbox")
+						span.checkbox-input__indicator
+					label.checkbox-input(for="") Pug (Jade)
+						input.checkbox-input__field(type="checkbox")
+						span.checkbox-input__indicator
+					label.checkbox-input(for="") Stylus/LESS/SASS
+						input.checkbox-input__field(type="checkbox")
+						span.checkbox-input__indicator
+					label.checkbox-input(for="") Работаю с SVG
+						input.checkbox-input__field(type="checkbox")
+						span.checkbox-input__indicator
+					label.checkbox-input(for="") Верстаю семантично
+						input.checkbox-input__field(type="checkbox")
+						span.checkbox-input__indicator
+					label.checkbox-input(for="") Accessibility (A11Y)
+						input.checkbox-input__field(type="checkbox")
+						span.checkbox-input__indicator
+					label.checkbox-input(for="") ES2015/ES2016
+						input.checkbox-input__field(type="checkbox")
+						span.checkbox-input__indicator
+					label.checkbox-input(for="") Gulp/GRUNT
+						input.checkbox-input__field(type="checkbox")
+						span.checkbox-input__indicator
+					label.checkbox-input(for="") Webpack
+						input.checkbox-input__field(type="checkbox")
+						span.checkbox-input__indicator
+					label.checkbox-input(for="") Дружу с WebGL
+						input.checkbox-input__field(type="checkbox")
+						span.checkbox-input__indicator
+					label.checkbox-input(for="") jQuery
+						input.checkbox-input__field(type="checkbox")
+						span.checkbox-input__indicator
+					label.checkbox-input(for="") Знаю/изучаю Angular
+						input.checkbox-input__field(type="checkbox")
+						span.checkbox-input__indicator
+					label.checkbox-input(for="") Знаю/изучаю React
+						input.checkbox-input__field(type="checkbox")
+						span.checkbox-input__indicator
+					label.checkbox-input(for="") Знаю/изучаю Node.js
+						input.checkbox-input__field(type="checkbox")
+						span.checkbox-input__indicator
+					label.checkbox-input(for="") Использую Git
+						input.checkbox-input__field(type="checkbox")
+						span.checkbox-input__indicator
+					label.checkbox-input(for="") С глазомером всё ок
+						input.checkbox-input__field(type="checkbox")
+						span.checkbox-input__indicator
+					label.checkbox-input(for="") Читаю blog.csssr.ru
+						input.checkbox-input__field(type="checkbox")
+						span.checkbox-input__indicator
+					label.checkbox-input(for="") Я ленивый(-ая)
+						input.checkbox-input__field(type="checkbox")
+						span.checkbox-input__indicator
+					label.checkbox-input(for="") У меня хороший английский
+						input.checkbox-input__field(type="checkbox")
+						span.checkbox-input__indicator
+				.form__javascript-slider
+					h2.form__title Уровень владения JavaScript
+					.range-slider
+				.form__about
+					h2.form__title Расскажите о себе словами
+					p.form__text.
+						Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.
+					textarea(name="", cols="30", rows="10")
+				.form__plans
+					h2.form__title Какие у вас планы на будущее?
+					p.form__text Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.
+					label.radio-input(for="") Верстать
+						input.radio-input__field(type="radio")
+						span.radio-input__indicator
+					label.radio-input(for="") Прокачиваться в JS
+						input.radio-input__field(type="radio")
+						span.radio-input__indicator
+					label.radio-input(for="") Менеджерство
+						input.radio-input__field(type="radio")
+						span.radio-input__indicator
+					label.radio-input(for="") Другое
+						input.radio-input__field(type="radio")
+						span.radio-input__indicator
+				.form__date
+					.text-input
+						label.text-input__label(for="") Дата заполенения
+						input.text-input__field(type="text")
