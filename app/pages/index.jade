@@ -18,105 +18,129 @@ block content
 				.form
 					.form__text-inputs
 						.text-input
-							label.text-input__label(for="") Полное ФИО
-							input.text-input__field(type="text" value="Иванов Иван Иванович")
+							label.text-input__label(for="name") Полное ФИО
+							input.text-input__field(type="text" value="Краснухин Вадим Игоревич" id="name")
 						.text-input
-							label.text-input__label(for="") Год рождения
-							input.text-input__field(type="text" value="1990")
+							label.text-input__label(for="birth") Год рождения
+							input.text-input__field(type="text" value="1988" id="birth")
 						.text-input
-							label.text-input__label(for="") Место жительства
-							input.text-input__field(type="text" value="г. Иваново, Россия")
+							label.text-input__label(for="place") Место жительства
+							input.text-input__field(type="text" value="г. Кишинев, Молдова" id="place")
 						.text-input
-							label.text-input__label(for="") Скайп
-							input.text-input__field(type="text" value="ivanov")
+							label.text-input__label(for="skype") Скайп
+							input.text-input__field(type="text" value="nort4k" id="skype")
 						.text-input
-							label.text-input__label(for="") Почта
-							input.text-input__field(type="text" value="ivanov@gmail.com")
-				.form__checkboxes
-					h2.form__title Расскажите о себе чекбоксами
-					p.form__text.
-						Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
-					label.checkbox-input(for="") БЭМ/OOCSS
-						input.checkbox-input__field(type="checkbox")
-						span.checkbox-input__indicator
-					label.checkbox-input(for="") Pug (Jade)
-						input.checkbox-input__field(type="checkbox")
-						span.checkbox-input__indicator
-					label.checkbox-input(for="") Stylus/LESS/SASS
-						input.checkbox-input__field(type="checkbox")
-						span.checkbox-input__indicator
-					label.checkbox-input(for="") Работаю с SVG
-						input.checkbox-input__field(type="checkbox")
-						span.checkbox-input__indicator
-					label.checkbox-input(for="") Верстаю семантично
-						input.checkbox-input__field(type="checkbox")
-						span.checkbox-input__indicator
-					label.checkbox-input(for="") Accessibility (A11Y)
-						input.checkbox-input__field(type="checkbox")
-						span.checkbox-input__indicator
-					label.checkbox-input(for="") ES2015/ES2016
-						input.checkbox-input__field(type="checkbox")
-						span.checkbox-input__indicator
-					label.checkbox-input(for="") Gulp/GRUNT
-						input.checkbox-input__field(type="checkbox")
-						span.checkbox-input__indicator
-					label.checkbox-input(for="") Webpack
-						input.checkbox-input__field(type="checkbox")
-						span.checkbox-input__indicator
-					label.checkbox-input(for="") Дружу с WebGL
-						input.checkbox-input__field(type="checkbox")
-						span.checkbox-input__indicator
-					label.checkbox-input(for="") jQuery
-						input.checkbox-input__field(type="checkbox")
-						span.checkbox-input__indicator
-					label.checkbox-input(for="") Знаю/изучаю Angular
-						input.checkbox-input__field(type="checkbox")
-						span.checkbox-input__indicator
-					label.checkbox-input(for="") Знаю/изучаю React
-						input.checkbox-input__field(type="checkbox")
-						span.checkbox-input__indicator
-					label.checkbox-input(for="") Знаю/изучаю Node.js
-						input.checkbox-input__field(type="checkbox")
-						span.checkbox-input__indicator
-					label.checkbox-input(for="") Использую Git
-						input.checkbox-input__field(type="checkbox")
-						span.checkbox-input__indicator
-					label.checkbox-input(for="") С глазомером всё ок
-						input.checkbox-input__field(type="checkbox")
-						span.checkbox-input__indicator
-					label.checkbox-input(for="") Читаю blog.csssr.ru
-						input.checkbox-input__field(type="checkbox")
-						span.checkbox-input__indicator
-					label.checkbox-input(for="") Я ленивый(-ая)
-						input.checkbox-input__field(type="checkbox")
-						span.checkbox-input__indicator
-					label.checkbox-input(for="") У меня хороший английский
-						input.checkbox-input__field(type="checkbox")
-						span.checkbox-input__indicator
-				.form__javascript-slider
-					h2.form__title Уровень владения JavaScript
-					.range-slider
-				.form__about
-					h2.form__title Расскажите о себе словами
-					p.form__text.
-						Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.
-					textarea(name="", cols="30", rows="10")
-				.form__plans
-					h2.form__title Какие у вас планы на будущее?
-					p.form__text Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.
-					label.radio-input(for="") Верстать
-						input.radio-input__field(type="radio")
-						span.radio-input__indicator
-					label.radio-input(for="") Прокачиваться в JS
-						input.radio-input__field(type="radio")
-						span.radio-input__indicator
-					label.radio-input(for="") Менеджерство
-						input.radio-input__field(type="radio")
-						span.radio-input__indicator
-					label.radio-input(for="") Другое
-						input.radio-input__field(type="radio")
-						span.radio-input__indicator
-				.form__date
-					.text-input
-						label.text-input__label(for="") Дата заполенения
-						input.text-input__field(type="text")
+							label.text-input__label(for="mail") Почта
+							input.text-input__field(type="text" value="4knort@gmail.com" id="mail")
+					.form__checkboxes
+						h2.form__title Расскажите о себе чекбоксами
+						p.form__text.
+							Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
+						.form__checkbox-list-wrap
+							ul.form__checkbox-list
+								li
+									label.checkbox-input(for="bem") БЭМ/OOCSS
+										input.checkbox-input__field(type="checkbox" id="bem" checked)
+										span.checkbox-input__indicator
+								li
+									label.checkbox-input(for="Jade") Pug (Jade)
+										input.checkbox-input__field(type="checkbox" id="Jade" checked)
+										span.checkbox-input__indicator
+								li
+									label.checkbox-input(for="preproc") Stylus/LESS/SASS
+										input.checkbox-input__field(type="checkbox" id="preproc" checked)
+										span.checkbox-input__indicator
+								li
+									label.checkbox-input(for="SVG") Работаю с SVG
+										input.checkbox-input__field(type="checkbox" id="SVG" checked)
+										span.checkbox-input__indicator
+								li
+									label.checkbox-input(for="seman") Верстаю семантично
+										input.checkbox-input__field(type="checkbox" id="seman" checked)
+										span.checkbox-input__indicator
+								li
+									label.checkbox-input(for="Accessibility") Accessibility (A11Y)
+										input.checkbox-input__field(type="checkbox" id="Accessibility")
+										span.checkbox-input__indicator
+								li
+									label.checkbox-input(for="ES2015") ES2015/ES2016
+										input.checkbox-input__field(type="checkbox" id="ES2015" checked)
+										span.checkbox-input__indicator
+							ul.form__checkbox-list
+								li
+									label.checkbox-input(for="taskrun") Gulp/GRUNT
+										input.checkbox-input__field(type="checkbox" id="taskrun" checked)
+										span.checkbox-input__indicator
+								li
+									label.checkbox-input(for="Webpack") Webpack
+										input.checkbox-input__field(type="checkbox" id="Webpack")
+										span.checkbox-input__indicator
+								li
+									label.checkbox-input(for="WebGL") Дружу с WebGL
+										input.checkbox-input__field(type="checkbox" id="WebGL")
+										span.checkbox-input__indicator
+								li
+									label.checkbox-input(for="jQuery") jQuery
+										input.checkbox-input__field(type="checkbox" id="jQuery" checked)
+										span.checkbox-input__indicator
+								li
+									label.checkbox-input(for="Angular") Знаю/изучаю Angular
+										input.checkbox-input__field(type="checkbox" id="Angular")
+										span.checkbox-input__indicator
+								li
+									label.checkbox-input(for="React") Знаю/изучаю React
+										input.checkbox-input__field(type="checkbox" id="React" checked)
+										span.checkbox-input__indicator
+								li
+									label.checkbox-input(for="Node") Знаю/изучаю Node.js
+										input.checkbox-input__field(type="checkbox" id="Node")
+										span.checkbox-input__indicator
+							ul.form__checkbox-list
+								li
+									label.checkbox-input(for="Git") Использую Git
+										input.checkbox-input__field(type="checkbox" id="Git" checked)
+										span.checkbox-input__indicator
+								li
+									label.checkbox-input(for="perfectpixel") С глазомером всё ок
+										input.checkbox-input__field(type="checkbox" id="perfectpixel" checked)
+										span.checkbox-input__indicator
+								li
+									label.checkbox-input(for="blog") Читаю blog.csssr.ru
+										input.checkbox-input__field(type="checkbox" id="blog")
+										span.checkbox-input__indicator
+								li
+									label.checkbox-input(for="lazy") Я ленивый(-ая)
+										input.checkbox-input__field(type="checkbox" id="lazy")
+										span.checkbox-input__indicator
+								li
+									label.checkbox-input(for="english") У меня хороший английский
+										input.checkbox-input__field(type="checkbox" id="english" checked)
+										span.checkbox-input__indicator
+
+					.form__javascript-slider
+						h2.form__title Уровень владения JavaScript
+						.range-slider
+					.form__about
+						h2.form__title Расскажите о себе словами
+						p.form__text.
+							Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.
+						textarea(name="", cols="30", rows="10")
+					.form__plans
+						h2.form__title Какие у вас планы на будущее?
+						p.form__text Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.
+						label.radio-input(for="") Верстать
+							input.radio-input__field(type="radio")
+							span.radio-input__indicator
+						label.radio-input(for="") Прокачиваться в JS
+							input.radio-input__field(type="radio")
+							span.radio-input__indicator
+						label.radio-input(for="") Менеджерство
+							input.radio-input__field(type="radio")
+							span.radio-input__indicator
+						label.radio-input(for="") Другое
+							input.radio-input__field(type="radio")
+							span.radio-input__indicator
+					.form__date
+						.text-input
+							label.text-input__label(for="") Дата заполенения
+							input.text-input__field(type="text")
