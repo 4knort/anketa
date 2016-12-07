@@ -33,6 +33,7 @@ block content
 							label.text-input__label(for="mail") Почта
 							input.text-input__field(type="text" value="4knort@gmail.com" id="mail")
 					.form__checkboxes
+						//- h2 and p можно следать нез. блоком, если такой же тайтл используется на других страницах
 						h2.form__title Расскажите о себе чекбоксами
 						p.form__text.
 							Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
@@ -120,6 +121,7 @@ block content
 					.form__javascript-slider
 						h2.form__title Уровень владения JavaScript
 						.range-slider
+							input(type="text" id="range-slider")
 					.form__about
 						h2.form__title Расскажите о себе словами
 						p.form__text.
