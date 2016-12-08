@@ -119,9 +119,24 @@ block content
 										span.checkbox-input__indicator
 
 					.form__javascript-slider
-						h2.form__title Уровень владения JavaScript
+						h2.form__title.form__title--js Уровень владения JavaScript
 						.range-slider
-							input(type="text" id="range-slider")
+							#slider-range-max
+							.range-slider__deviders
+								.range-slider__devider-big.range-slider__devider-1
+								.range-slider__devider-small.range-slider__devider-2
+								.range-slider__devider-small.range-slider__devider-3
+								.range-slider__devider-big.range-slider__devider-4
+							.range-slider__text-wrap
+								.range-slider__text.range-slider__devider-1.
+									Не владею
+								.range-slider__text.range-slider__devider-2.
+									Использую готовые решения
+								.range-slider__text.range-slider__devider-3.
+									Использую готовые решения
+									и умею их переделывать
+								.range-slider__text.range-slider__devider-4.
+									Пишу сложный JS с нуля
 					.form__about
 						h2.form__title Расскажите о себе словами
 						p.form__text.

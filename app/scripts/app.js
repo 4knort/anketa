@@ -3,4 +3,10 @@ import $ from 'jquery';
 
 $(() => {
 	svg4everybody();
+
+	$( function() {
+	    $( "#slider-range-max" ).slider({
+	    	value:20
+	    });
+	  } );
 });

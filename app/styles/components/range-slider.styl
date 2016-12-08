@@ -1,0 +1,49 @@
+.range-slider
+	.ui-slider-horizontal
+		height 4px
+	.ui-widget-content
+		background transparent url(../images/slider-border.png) repeat-x -6px -27px
+		border none
+		.ui-slider-handle
+			width 18px
+			height 15px
+			background url(../images/slider-icon.png) no-repeat
+			border none
+			top -20px
+	.ui-widget-header
+		background none
+	&__text-wrap
+		width: 100%
+		position relative
+		font-size 13px
+	&__text
+		display inline-block
+		position absolute
+		padding-top 5px
+		line-height 17px
+		color brown-text
+		font-weight bold
+		max-width 170px
+		vertical-align top
+	&__deviders
+		width 100%
+		height 23px
+		position relative
+	&__devider-big,
+	&__devider-small
+		position: absolute
+		top -2px
+		background-color brown-text
+		height 23px
+		width 3px
+	&__devider-small
+		height 11px
+	&__devider-1
+		left 0
+	&__devider-2
+		left 20%
+	&__devider-3
+		left 50%
+	&__devider-4
+		right 0
+
