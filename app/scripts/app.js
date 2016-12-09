@@ -6,7 +6,7 @@ $(() => {
 
 	$( function () {
 		$('#slider-range-max').slider({
-			value: 20
+			value: 35
 		});
 	} );
 });
