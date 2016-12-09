@@ -1,0 +1,26 @@
+.radio-input
+	font-weight bold
+	font-size 21px
+	line-height 25px
+	padding-left 29px
+	display inline-block
+	vertical-align baseline
+	max-width 245px
+	position relative
+	margin-right 16px
+	&:last-child
+		margin-right 0
+	&__field
+		display none
+		&:checked + .radio-input__indicator:before
+			content ""
+			position absolute
+			top 13px
+			left 9px
+			sprite $radio_icon_full
+	&__indicator
+		position absolute
+		top -9px
+		left -11px
+		sprite $radio_icon_empty
+
